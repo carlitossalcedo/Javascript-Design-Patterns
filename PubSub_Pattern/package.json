@@ -1,0 +1,22 @@
+{
+  "name": "pubsub-pattern",
+  "version": "1.0.0",
+  "description": "",
+  "main": "PubSub.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"build": "babel src --out-dir lib",
+	"start": "npm run build && node ./lib/PubSub.2.js",
+	"build:live": "nodemon --exec ./node_modules/.bin/ts-node -- ./PubSub.ts"
+	
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^8.0.50",
+    "babel-cli": "^6.26.0",
+    "nodemon": "^1.12.1",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.6.1"
+  }
+}
